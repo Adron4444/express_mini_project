@@ -1,0 +1,14 @@
+<form onchange="this.submit()" method="post">
+  <label> <input type="radio" name="sort" value="asc"> rosnąco</label>
+  <label> <input type="radio" name="sort" value="desc"> malejąco</label>
+</form>
+
+<table>
+  {{#each users}}
+    <tr>
+      <td>id: {{id}}</td>
+      <td>user: {{login}} - {{pass}}</td>
+      <td>wiek: {{age}}</td>
+    <tr>
+  {{/each}}
+</table>

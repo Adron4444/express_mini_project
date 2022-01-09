@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+header {
+  background-color: darkblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header>ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
+  text-align: right;
+}
+
+header li {
+  margin: 10px;
+}
+
+header a {
+  color: white;
+}
+
+main {
+  display: grid;
+}
+
+main>h1 {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 80px;
+  color: gray;
+  opacity: 0.5;
+}
+
+.centerDiv {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.centerDiv label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  align-items: center;
+}
+
+label>input {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.inside{
+  font-weight: normal !important;
+  float: left;
+}
+
+input[type=submit] {
+  margin-top: 15px;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+input[type=radio] {
+  margin-right: .4rem;
+}
+
+label > select{
+  width: 67.65%;
+  padding: 8px;
+}

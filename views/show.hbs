@@ -1,0 +1,18 @@
+<br>
+<table>
+  {{#each users}}
+    <tr>
+      <td>id: {{id}}</td>
+      <td>user: {{login}} - {{pass}}</td>
+      <td>uczeń:
+        {{#if (radioStudent student)}}
+          <input type="checkbox" value="true" checked disabled>
+        {{else}}
+          <input type="checkbox" value="" disabled>
+        {{/if}}
+      </td>
+      <td>wiek: {{age}}</td>
+      <td>płeć: {{gender}}</td>
+    </tr>
+  {{/each}}
+</table>

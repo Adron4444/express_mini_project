@@ -1,0 +1,21 @@
+nav{
+  background-color: #ffbf00;
+}
+header > ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 5fr;
+  text-align: right;
+}
+nav > ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns:  1fr 1fr 1fr 7fr;
+    text-align: right;
+}
+nav > ul > li {
+  margin: 10px;
+}
+nav > ul > li > a{
+  color: black;
+}

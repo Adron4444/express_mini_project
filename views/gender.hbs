@@ -1,0 +1,21 @@
+<table>
+  {{#each users}}
+    {{#if (checkGender gender)}}
+      <tr class="gen1">
+        <td class="gen2">id: {{id}}</td>
+        <td class="gen3">płeć: {{gender}}</td>
+      </tr>
+    {{/if}}
+  {{/each}}
+</table>
+<div class="free"></div>
+<table>
+  {{#each users}}
+    {{#unless (checkGender gender)}}
+      <tr class="gen1">
+        <td class="gen2">id: {{id}}</td>
+        <td class="gen3">płeć: {{gender}}</td>
+      </tr>
+    {{/unless}}
+  {{/each}}
+</table>

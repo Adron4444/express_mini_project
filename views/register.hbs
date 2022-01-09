@@ -1,0 +1,21 @@
+<h1>reqister page</h1>
+<div class="centerDiv">
+  <form action="/register" method="POST">
+    <label>login:<input type="text" name="login"></label><br>
+    <label>password:<input type="password" name="pass"></label><br>
+    <label>wiek:
+      <select name='select'>
+        {{#createSelect 20}}
+        {{/createSelect}}
+      </select>
+    </label><br>
+    <label>uczen?:<input type="checkbox" name="student" value="checked"></label><br>
+    <label>płeć:<br>
+      <div>
+        <label class="inside"><input type="radio" name="gender" value="male">male</label>
+        <label class="inside"><input type="radio" name="gender" value="female">female</label><br>
+      </div>
+    </label>
+    <input type="submit" name="submit" value="Register">
+  </form>
+</div>
